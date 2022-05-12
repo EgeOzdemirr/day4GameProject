@@ -16,22 +16,22 @@ public class PlayerManager implements PlayerService {
 	@Override
 	public void add(Player player) throws NumberFormatException, RemoteException {
 		if(personCheckService.CheckIfRealPerson(player)) {
-			System.out.println(player.getFirstName() + " " + player.getLastName() + " baþarýyla kayýt oldu.");
+			System.out.println(player.getFirstName() + " " + player.getLastName() + " basariyla kayit oldu.");
 		}else {
-			System.out.println("Kiþi bulunamadý.");
+			System.out.println("Kisi bulunamadi.");
 		}
 		
 	}
 
 	@Override
 	public void delete(Player player) {
-		System.out.println(player.getFirstName() + " " + player.getLastName() + " kaydýný sildi.");
+		System.out.println(player.getFirstName() + " " + player.getLastName() + " kaydini sildi.");
 		
 	}
 
 	@Override
 	public void update(Player player) {
-		System.out.println(player.getFirstName() + " " + player.getLastName() + " bilgilerini güncelledi.");
+		System.out.println(player.getFirstName() + " " + player.getLastName() + " bilgilerini guncelledi.");
 		
 	}
 

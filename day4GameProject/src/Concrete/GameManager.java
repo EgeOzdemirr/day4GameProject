@@ -13,7 +13,7 @@ public class GameManager implements GameService {
 
 	@Override
 	public void delete(Game game) {
-		System.out.println(game.getName() + " oyunu sistemden kaldýrýrldý.");
+		System.out.println(game.getName() + " oyunu sistemden kaldirildi.");
 
 	}
 
