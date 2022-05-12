@@ -14,10 +14,10 @@ public class MernisCheckService implements PersonCheckService {
 		boolean result = kpsPublicSoapProxy.TCKimlikNoDogrula(Long.parseLong(player.getNationlityId()),
 				player.getFirstName(), player.getLastName(), player.getBirthYear());
 		if (result == true) {
-			System.out.println("Baþarýlý giriþ");
+			System.out.println("Basarili giris");
 			return true;
 		} else {
-			System.out.println("Baþarýsýz giriþ");
+			System.out.println("Basarisiz giris");
 			return false;
 		}
 
